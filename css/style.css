@@ -1,10 +1,12 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'inter', 'david libre';
     margin: 0;
     padding: 0;
-    background: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
 }
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -49,8 +51,7 @@ body {
 .book-button:hover {
     background: #d3541c;
 }
-
-.news-container {
+ .news-container {
     max-width: 1100px;
     margin: 50px auto;
     padding: 40px;
@@ -67,6 +68,7 @@ body {
 }
 
 .form-container {
+    background-image: url('/image/Vector.svg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,9 +104,455 @@ body {
     background: #e55b2c;
 }
 
+.container {
+    background-image: url('/image/circles.svg'),url('/image/foodcircle.svg'),url('/image/img.svg'),url('/image/img1.svg'),url('/image/img2.svg');
+    background-repeat: no-repeat;
+    background-position:-10% -20% ,5% 20%,70% 0%,100% -10%,100% 89%;
+    background-size: 20%,5%,;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+  
+    
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #222;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-btn, .book-btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu-btn {
+    background-color: black;
+    color: white;
+    border-radius: 10px 0 10px 0;
+}
+
+.book-btn {
+    background-color: orange;
+    color: white;
+    border-radius: 10px 0 10px 0;
+}
+
+.menu-btn:hover {
+    background-color: #333;
+}
+
+.book-btn:hover {
+    background-color: darkorange;
+}
+
+.image-section {
+    position: relative;
+    max-width: 500;
+
+
+}
+
+.restaurant-img {
+    max-width: 100%;
+   
+
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+.menu-section {
+  
+    background-image: url('/image/bg5.svg'),url('/image/Group\ 21.png'); /* Chhoti image ka path */
+    background-repeat: no-repeat; /* Image repeat hogi */
+    background-size: 15%,15%; /* Original size rahega */
+    background-position: bottom center,bottom right; /* Shuruat kahan se hogi */
+    background-color: #e2e2e2;
+     padding: 50px 20px;  
+    
+}
+
+.menu-title {  
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu-description {
+  
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.dishes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dish-card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid white;
+    transition: .3s;
+}
+.dish-card:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.dish-image {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dish-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #333;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    top: 60px;
+}
+
+.dish-name {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.dish-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+.welcome-section {
+    background-image: url('/image/bg4.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size:20% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #e2e2e2;
+}
+
+.welcome-container {
+    background-image: url('/image/garlic.svg'),url('/image/bg3.svg');;
+    background-repeat: no-repeat;
+    background-position:bottom,top;
+    background-size:20% ,20%; 
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+.welcome-image {
+ 
+    position: relative;
+    width: 50%;
+}
+
+.welcome-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.decorative-elements .element {
+    position: absolute;
+    width: min-content;
+}
+
+.element1 { top: -20px; left: 20px; }
+.element2 { top: 50px; right: -30px; }
+.element3 { bottom: -1px;   left: -5px}
+.element4 { bottom: 30px; right: -20px; }
+
+.welcome-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.welcome-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.welcome-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.welcome-buttons button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px 0 10px 0;
+    margin-right: 10px;
+}
+
+.menu-button {
+    background-color: #222;
+    color: white;
+}
+
+.reservation-button {
+    background-color: #ff5722;
+    color: white;
+}
+.chef-section {
+    width: 80%;
+    background-image: url('/image/Group\ 21.png');
+    background-size: auto; 
+    background-position:top-left;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chef-content {
+    width: 50%;
+}
+
+.chef-content h2 {
+    font-size: 50px;
+    color: #333;
+}
+
+.chef-content p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.chef-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.line-social{
+    background: #b0b0b0;
+    width: 80px;
+    height: 2px;
+    margin-top: 22px;
+}
+.chef-content ul span{
+    background: rgb(255, 82, 2);
+    color: white;
+    padding: 5px;
+    margin-right: 8px;
+    border-radius: 50px;
+}
+
+.chef-content ul li {
+    min-width: 300px;
+    margin: 8px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.menu-btn, .book-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px 0 10px 0;
+}
+
+.menu-btn {
+    background-color: #222;
+    color: white;
+    margin-right: 10px;
+}
+
+.book-btn {
+    background-color: #ff6600;
+    color: white;
+}
+
+.chef-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.testi-section{
+    background-image: url('/image/pan.svg');
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size:auto;
+}
+.testimonial-section {
+ 
+    max-width: 560px;
+    margin: 50px auto;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h4 {
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+}
+
+p{
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+  
+    background: white;
+    padding: 40px;
+    border-radius: 60px 15px 60px 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.profile {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    font-size: 20px;
+    color: #FFA500;
+    margin-top: 30px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.customer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.customer-role {
+    font-size: 14px;
+    color: #888;
+}
+
+.dots {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff6600;
+}
+
 .footer {
     background-color: #f8f9fa;
     padding: 30px;
+    background-image: url('/image/Group.svg');
+    background-size: 100% 100%;;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .footer-container {
@@ -134,6 +582,7 @@ body {
     gap: 15px; 
 
 }
+
 
 .footer-links h3, .footer-right h3 {
     font-size: 16px;
@@ -192,8 +641,9 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        background: gray;
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-links {
@@ -212,4 +662,4 @@ body {
     .footer-container {
         flex-direction: column;
     }
-}
+} 
